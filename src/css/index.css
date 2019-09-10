@@ -1,0 +1,23 @@
+html, body{
+    /*configuracoes inicias padrao*/
+    margin:10px; /* espacamento de 10 da margem em todas as direcoes*/
+    padding:0;
+    box-sizing:border-box;
+    background: #7159c1;
+  }
+
+header{
+    background: yellow;
+}
+main{
+    background: blue;
+}
+footer{
+    background: red;
+}
+.main-container{
+    display:grid; /*seta como grid a div*/
+    grid-template-columns: 1fr ; /* duas colunas, sendo uma de tamanho 3 e a outra de tamanho 1*/
+    grid-template-rows: 5vh 80vh 10vh; /* tres linhas, tamanhos 10,70 e 10, respectivamente*/
+    grid-gap: 20px; /*bordas tanto nas linhas quantos nas colunas*/
+    }
