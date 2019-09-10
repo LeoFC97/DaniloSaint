@@ -22,6 +22,7 @@ footer{
     background: red;
     grid-area: footer;
 }
+
 .main-container{
     display:grid; /*seta como grid a div*/
     grid-template-columns: 3fr 1fr ; /* duas colunas, sendo uma de tamanho 3 e a outra de tamanho 1*/
