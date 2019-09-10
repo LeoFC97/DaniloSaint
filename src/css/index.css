@@ -8,16 +8,27 @@ html, body{
 
 header{
     background: yellow;
+    grid-area: header;
 }
 main{
     background: blue;
+    grid-area: main;
+}
+aside{
+    background: green;
+    grid-area: aside;
 }
 footer{
     background: red;
+    grid-area: footer;
 }
 .main-container{
     display:grid; /*seta como grid a div*/
-    grid-template-columns: 1fr ; /* duas colunas, sendo uma de tamanho 3 e a outra de tamanho 1*/
+    grid-template-columns: 3fr 1fr ; /* duas colunas, sendo uma de tamanho 3 e a outra de tamanho 1*/
     grid-template-rows: 5vh 80vh 10vh; /* tres linhas, tamanhos 10,70 e 10, respectivamente*/
     grid-gap: 20px; /*bordas tanto nas linhas quantos nas colunas*/
-    }
+
+    grid-template-areas:"header header"
+                        "main aside"
+                        "footer footer"
+}
