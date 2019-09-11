@@ -1,6 +1,6 @@
 html, body{
     /*configuracoes inicias padrao*/
-    margin:10px; /* espacamento de 10 da margem em todas as direcoes*/
+    margin:20px; /* espacamento de 10 da margem em todas as direcoes*/
     padding:0;
     box-sizing:border-box;
     background: #7159c1;
