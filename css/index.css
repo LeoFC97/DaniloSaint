@@ -22,6 +22,17 @@ footer{
     background: red;
     grid-area: footer;
 }
+.fotos{
+    height: 100%;
+    width: 100%;
+}
+
+.container-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
 
 .main-container{
     display:grid; /*seta como grid a div*/
