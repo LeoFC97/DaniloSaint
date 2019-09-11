@@ -3,11 +3,15 @@ html, body{
     margin:10px; /* espacamento de 10 da margem em todas as direcoes*/
     padding:0;
     box-sizing:border-box;
-    background: #7159c1;
+    background: #292046;
   }
 
 header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background: yellow;
+    align-content: space-between;
     grid-area: header;
 }
 main{
@@ -20,7 +24,7 @@ aside{
 }
 footer{
     background: red;
-    grid-area: footer;
+    grid-area: footer; 
 }
 .container-main p{
     background: grey;
@@ -29,12 +33,18 @@ footer{
 .container-main img{
     background: yellow;
     grid-column: 2/3;
+    height: 100%;
+    width: 100%;
+    
 }
 .container-main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 2px;
+
+    justify-items: center;
+    align-items: center;
+
 }
 .main-container{
     display:grid; /*seta como grid a div*/
