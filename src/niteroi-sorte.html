@@ -10,8 +10,43 @@
             <a href="sobre.html">Sobre</a>
             <a href="doe.html">Doe :)</a>
         </header>
-        <main> letra da musica </main>
-        <aside>sobre a musica </aside>
-        <footer> player do soundcloud</footer>
+        <main class="container-main" > 
+            <p>
+                Lorem ipsum praesent a dictum at hendrerit scelerisque sociosqu, placerat tellus vitae turpis congue dolor porta nibh, ac mattis placerat integer dictumst tempus at. 
+                morbi quisque habitasse luctus nisl sapien euismod elit eleifend elit nulla, posuere vestibulum mattis netus habitasse molestie cras varius elit lorem, hendrerit cursus vivamus congue ornare sapien cursus quam orci. 
+                ultrices erat fermentum mattis curae malesuada elit lorem tempus eu aenean mollis cubilia suspendisse pharetra, dapibus ligula sagittis quis nulla lorem quisque erat posuere potenti a vitae pretium. 
+                interdum quisque vulputate tristique sem libero cursus torquent tincidunt, purus placerat at vitae sagittis fringilla rhoncus etiam ullamcorper, ad molestie fames hendrerit vel lacinia hac. 
+            </p>
+             <img src="assets/carroAlagado.jpg" alt="alagamento" /> 
+                <p>
+                    Lorem ipsum praesent a dictum at hendrerit scelerisque sociosqu, placerat tellus vitae turpis congue dolor porta nibh, ac mattis placerat integer dictumst tempus at. 
+                    morbi quisque habitasse luctus nisl sapien euismod elit eleifend elit nulla, posuere vestibulum mattis netus habitasse molestie cras varius elit lorem, hendrerit cursus vivamus congue ornare sapien cursus quam orci. 
+                    ultrices erat fermentum mattis curae malesuada elit lorem tempus eu aenean mollis cubilia suspendisse pharetra, dapibus ligula sagittis quis nulla lorem quisque erat posuere potenti a vitae pretium. 
+                    interdum quisque vulputate tristique sem libero cursus torquent tincidunt, purus placerat at vitae sagittis fringilla rhoncus etiam ullamcorper, ad molestie fames hendrerit vel lacinia hac. 
+                </p>
+                        
+        </main>
+        <aside><p>
+                Lorem ipsum praesent a dictum at hendrerit scelerisque sociosqu, placerat tellus vitae turpis congue dolor porta nibh, ac mattis placerat integer dictumst tempus at. 
+                morbi quisque habitasse luctus nisl sapien euismod elit eleifend elit nulla, posuere vestibulum mattis netus habitasse molestie cras varius elit lorem, hendrerit cursus vivamus congue ornare sapien cursus quam orci. 
+                ultrices erat fermentum mattis curae malesuada elit lorem tempus eu aenean mollis cubilia suspendisse pharetra, dapibus ligula sagittis quis nulla lorem quisque erat posuere potenti a vitae pretium. 
+                interdum quisque vulputate tristique sem libero cursus torquent tincidunt, purus placerat at vitae sagittis fringilla rhoncus etiam ullamcorper, ad molestie fames hendrerit vel lacinia hac. 
+                </p> </aside>
+        <footer>
+            <button onclick="playAudio()" type="button"> Play Niteroi Sorte </button>
+            <button onclick="pauseAudio()" type="button"> Pausa Niteroi Sorte </button>
+            <audio id="player">
+                <source src="assets/niteroi-sorte.mp3" type="audio/mpeg">
+            </audio>
+            <script>
+                const x = document.getElementById("player")
+                function playAudio(){
+                    x.play()
+                }
+                function pauseAudio(){
+                    x.pause()
+                }
+            </script>
+        </footer>
     </div>
 </body>
